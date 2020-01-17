@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body{
+        background-image: url('lake1.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;    
+    }
+    
+    text{
+        position: relative;
+        margin-left: 80%;
+        margin-top: 9%;   
+        color: white;
+    }  
+    ul.a {
+        list-style-type: square;
+        font-size: 20px;
+    }
+    
+    .Topic {
+        font-size: 60px;
+        color: black;
+        padding: 1px;
+        font-family: fantasy;
+        margin-top: 150px;
+    }
+    
+    box { 
+        background: rgb(255,255,255);
+        background: radial-gradient(circle, rgba(255,255,255,1) 6%, rgba(140,140,140,1) 100%);
+        width: 700px;
+        height: 225px;
+        border: 5px solid black;
+        padding: 10px;
+        padding-right: 30px;
+        margin: 10px;
+        text-align: justify;
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+
+    body {margin:0;}
+    Nav {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: black;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    list {
+        float: left;
+    }
+
+    list a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 15px 30px;
+        text-decoration: none;
+    }
+
+    list a:hover:not(.active) {
+        background-color: dimgray;
+    }
+
+    .active {
+        background-color: gray;
+    } 
+     .resume {
+        display: inline-block;
+        border-radius: 12px;
+        background: rgb(255,255,255);
+        background: radial-gradient(circle, rgba(255,255,255,1) 6%, rgba(140,140,140,1) 100%);
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 28px;
+        padding: 20px;
+        width: 200px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+        margin-top: 20px;
+    }
+
+    .resume span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+        color: black;
+    }
+
+    .resume span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
+
+    .resume:hover span {
+        padding-right: 25px;
+    }
+
+    .resume:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+
+</style>
+</head>
+
+<body>
+<Nav> <!-- Navigation bar -->  
+        <list><a href="index.html">Home</a></list>
+        <list><a class="active" href="AboutMe.html">About Me</a></list>
+        <list><a href="Contact.html">Contact</a></list>
+    </Nav>    
+
+<div class = "Topic" align= "center"><p style = "text-align: center">Who am I?</p></div>
+
+<box>
+<ul class ="a"><strong>
+    <li>I am a candidate for the Bachelor's of Applied Sciences at the University of Waterloo in the Computer Engineering program.</li><br>
+    <li>I am an extremely enthusiastic and motivated individual who loves accomplishing goals through means of learning new and complex concepts. </li><br>
+    <li>I also have expceptional leadership skills and I am a fantastic collaborator, thanks to my outgoing personality. </li><br>
+</strong>
+</ul>
+</box>
+    
+<resume class = "resume" align = "center"><a href="resume.pdf" target = "_blank"><span><strong>My resume</strong></span></a></resume>
+    
+<text>Picture taken by Anweshi Anavadya on OnePlus 3T</text> 
+   
+    
+</body>
+</html>
